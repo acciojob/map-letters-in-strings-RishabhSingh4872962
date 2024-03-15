@@ -2,9 +2,8 @@
 function mapLetters(str) {
 	if (str.length==1) {
 		const s=str.charAt(0);
-		let obj={
-			s:[0]
-		}
+		let obj={};
+		obj[s]=[0]
 		return obj;
 	}
 	let obj={};
@@ -20,4 +19,4 @@ function mapLetters(str) {
 	return obj
 }
 const s=prompt("enter the string");
-alert(JSON.stringify(mapLetters(s)))
+alert(JSON.stringify(mapLetters(s)));
